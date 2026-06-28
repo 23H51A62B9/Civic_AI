@@ -182,3 +182,45 @@
     border-right-color: var(--border);
   }
 }
+
+/* Custom Leaflet Map Styling */
+.leaflet-container {
+  background: #fdfbf7 !important;
+}
+.dark .leaflet-container {
+  background: #111827 !important;
+}
+
+/* Sepia/cream filtered tiles to match CivicAI premium theme */
+.cream-map-tiles {
+  filter: sepia(0.45) hue-rotate(-10deg) saturate(0.7) contrast(0.95) brightness(1.03);
+}
+
+.dark .cream-map-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.65) contrast(1.15) saturate(0.6);
+}
+
+/* Custom styled popup for Leaflet */
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background: rgba(24, 24, 27, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #f4f4f5 !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark .leaflet-popup-tip {
+  background: rgba(24, 24, 27, 0.85) !important;
+}
+
